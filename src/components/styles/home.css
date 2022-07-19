@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+.homeContainer {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    flex: 2;
+
+    background-image: url("../../../public/assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    
+    color:white;
+    padding: 20px;
+}
+
+.infoContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #D0D6F9;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title span{
+    color: white;
+}
+
+.infoContent span {
+    font-size: 2em;
+}
+
+.btnContainer {
+    /* width: 100%; */
+    /* border: 2px solid red; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exploreBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: #0B0D17;
+    border-radius: 50%;
+}
+
+.exploreBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 50px white;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+@media screen and (min-width: 820px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .homeContainer {
+        grid-template-columns: 1fr 1fr;
+        background-image: url("../../../public/assets/home/background-home-desktop.jpg");
+        padding-bottom: 200px;
+        place-content: end;
+    }
+    .exploreBtn {
+        width: 300px;
+        height: 300px;
+    }
+    .infoContent {
+        text-align: left;
+        /* border: 2px solid red; */
+        font-size: 1.5em;
+        /* width: min-content; */
+        
+    }
+    .info {
+        /* border: 2px solid green; */
+        width: min-content;
+    }
+    .title {
+        font-size: 3em;
+    }
+}
