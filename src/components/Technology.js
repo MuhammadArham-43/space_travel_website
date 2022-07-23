@@ -28,7 +28,7 @@ export default function Technology() {
     <div className="tech-mainContainer">
       <div className="tech-content">
         <h3 className="tech-title">
-          <span className="tech-index">00</span> Space Launch 101
+          <span className="tech-index">03</span> Space Launch 101
         </h3>
         <div className="tech-content-main">
           <div className="tech-images">

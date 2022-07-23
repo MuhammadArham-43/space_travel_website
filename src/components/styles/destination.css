@@ -1,0 +1,211 @@
+.destination-mainContainer {
+    /* border: 2px solid red; */
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../public/assets/destination/background-destination-mobile.jpg");
+    background-size: cover;
+    color: #D0D6F9;
+    /* animation: renderDest 2s; */
+    animation: renderComp 1s;
+}
+
+.destination-content {
+    padding: 20px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.destination-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.destination-title span {
+    color: #D0D6F9;
+}
+
+.destination-content-main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.destination-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid purple; */
+}
+
+.destination-image {
+    width: 50%;
+}
+
+.destination-tabs {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.destination-tab {
+    border: 2px solid transparent;
+    padding: 5px 0;
+    text-transform: uppercase;
+    transition: 200ms ease-in;
+}
+
+.dest-tab-active {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.destination-tab:hover {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+.destination-info-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.destination-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination-location {
+    color : white;
+    font-size: 3em;
+}
+
+.destination-info-para {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.destination-statistics {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.destination-stat {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+.dest-stat {
+    color: white;
+    font-size: 2em;
+}
+
+
+@keyframes renderDest {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+@media screen and (min-width:520px) {
+    .destination-mainContainer {
+        place-items: center;
+    }
+    .destination-title {
+        font-size: 2rem;
+    }
+    .destination-content {
+        gap: 50px;
+    }
+    .destination-info-main {
+        padding: 50px;
+        gap: 50px;
+    }
+    .destination-info {
+        gap: 20px;
+    }
+    .destination-info-para {
+        line-height: 2rem;
+        font-size: 1.5rem;
+        /* padding: 0 50px; */
+    }
+    .destination-statistics {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .destination-mainContainer {
+        background-image: url("../../../public/assets/destination/background-destination-desktop.jpg");
+        place-items: center;
+    }
+
+    .destination-content {
+        align-items: flex-start;
+        padding: 0 100px;
+        gap: 50px;
+    }
+
+    .destination-title {
+        font-size: 2.5rem;
+    }
+
+    .destination-image {
+        width: 100%;
+    }
+
+    .destination-content-main {
+        grid-template-columns: 1fr 1fr;
+        /* padding: 20px; */
+    }
+
+    .destination-info-main {
+        gap: 50px;
+    }
+    .destination-tabs {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    .destination-info {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .destination-location {
+        /* font-size: 5rem; */
+    }
+    .destination-info-para {
+        text-align: left;
+        font-size: 1.5rem;
+        /* line-height: 3rem; */
+        /* width: 50%; */
+    }
+    .destination-statistics {
+        grid-template-columns: 1fr 1fr;
+        place-items: start;
+    }
+    .destination-stat {
+        place-items: start;
+    }
+}

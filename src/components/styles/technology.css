@@ -14,9 +14,12 @@
     color:white;
     gap: 30px;
     /* padding: 20px; */
+    animation: renderComp 1s;
+
 }
 
 .tech-title {
+    padding: 20px 0; 
     text-transform: uppercase;
     font-size: 1.3em;
     color: white;
@@ -105,6 +108,7 @@
 @media screen and (min-width:520px) {
     .tech-mainContainer {
         display: flex;
+        background-image: url("../../../public/assets/technology/background-technology-tablet.jpg");
     }
     
     .tech-images img {
@@ -116,6 +120,7 @@
 @media screen and (min-width:1024px) {
     .tech-mainContainer {
         display: flex;
+        background-image: url("../../../public/assets/technology/background-technology-desktop.jpg");
         /* border: 2px solid green; */
     }
 
